@@ -73,9 +73,9 @@ const Home = () => {
             </div>
             {loading? countryBoxes  :data && (
            <>
-          {data.map((country: Country) => (
-            <div className='col-md-12 col-lg-6'>
-            <div className='CounrtyBox' key={country.name}><div className='imageBox'><span><img src={country.flag}/></span></div><div className='DetailsBox'><h2>{country.name}</h2><p>{country.region}</p></div></div>
+          {data.map((country: Country,index) => (
+            <div  key={index} className='col-md-12 col-lg-6'>
+            <div className='CounrtyBox'><div className='imageBox'><span><img src={country.flag}/></span></div><div className='DetailsBox'><h2>{country.name}</h2><p>{country.region}</p></div></div>
             </div>
           ))}
           </>

@@ -5,7 +5,7 @@ import React from 'react';
 return (
 
     <>
-        <div className='container container mb-5 mt-5'>
+        <div className='container mt-sm-0 mt-md-5  mb-5'>
             <div className='row'>
             <div className="socialMediaWarp mt-5 mb-3">
             <div><img src="/public/g.svg"/> </div>
