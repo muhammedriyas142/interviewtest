@@ -1,154 +1,187 @@
-.divflex{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
-  align-content: center;
-  gap: 10px;
+.divflex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100vh;
+	align-content: center;
+	gap: 10px;
 }
 
-.signLabel{
-font-size: 32px;
-font-weight: 700;
-line-height: 42px;
-letter-spacing: 0em;
-text-align: left;
+.signLabel {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 42px;
+	letter-spacing: 0em;
+	text-align: left;
 }
 
-.gapFlex{
-  display: flex;
-  gap: 10px;
-
-}
-
-
-.linkColor{
-  color: #587FFF;
+.gapFlex {
+	display: flex;
+	gap: 10px;
 
 }
 
-.MuiButtonBase-root.SignButton{
-  background-color: #3C3C3C;
+
+.linkColor {
+	color: #587FFF;
+
 }
 
+.MuiButtonBase-root.SignButton {
+	background-color: #3C3C3C;
+}
 
 
 .signLine {
-  height: 1px;
-    background: #CFCFCF;
-    width: 75%;
+	height: 1px;
+	background: #CFCFCF;
+	width: 75%;
 }
 
 
-.signWrapText{
-  width: 100%;
-  font-size: 12px;
-  font-weight: 600;
-  color: #3D3D3D;
+.signWrapText {
+	width: 100%;
+	font-size: 12px;
+	font-weight: 600;
+	color: #3D3D3D;
 }
+
 .signWrap {
-  display: flex;
-  align-items: center; /* Vertically center the items */
+	display: flex;
+	align-items: center;
+	/* Vertically center the items */
 }
 
 .signLine {
-  flex: 1; /* Distribute available space evenly between lines */
-  height: 1px;
-  background-color: #000; /* Adjust the color as needed */
-  margin: 0 10px; /* Adjust the margin between lines as needed */
+	flex: 1;
+	/* Distribute available space evenly between lines */
+	height: 1px;
+	background-color: #000;
+	/* Adjust the color as needed */
+	margin: 0 10px;
+	/* Adjust the margin between lines as needed */
 }
 
 .signWrapText {
-  padding: 0 10px; /* Adjust the padding around the text as needed */
+	padding: 0 10px;
+	/* Adjust the padding around the text as needed */
 }
 
-.socialMediaWarp{
-  display: flex;
-    gap: 10px;
-    flex-wrap: nowrap;
-    align-content: center;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.h1Head {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 34px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.socialMediaWarp {
+	display: flex;
+	gap: 10px;
+	flex-wrap: nowrap;
+	align-content: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .CounrtyBox {
-  overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-    border: 2px solid #3E3E3E;
-    box-shadow: 7px 8px 0px #E7E4E4;
-    height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 15px;
+	border: 2px solid #3E3E3E;
+	box-shadow: 7px 8px 0px #E7E4E4;
+	height: 100%;
 }
-.DetailsBox{
-  width: 60%;
-}
-.DetailsBox h2{
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 33px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.DetailsBox p{
 
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  text-align: left;
+.DetailsBox {
+	width: 60%;
 }
-.CounrtyBox img{
-  width: 127px;
-  height: 96px;  
-  object-fit: cover;
-  padding: 10px;
+
+.DetailsBox h2 {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 33px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.DetailsBox p {
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	letter-spacing: 0.03em;
+	text-align: left;
+}
+
+.CounrtyBox img {
+	width: 127px;
+	height: 96px;
+	object-fit: cover;
+	padding: 10px;
 
 }
 
 ul {
-  list-style: none; 
-  padding: 0; 
+	list-style: none;
+	padding: 0;
 }
 
 li {
-  display: inline; 
-  margin-right: 10px; 
+	display: inline;
+	margin-right: 10px;
 
 }
-.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.css-1e6y48t-MuiButtonBase-root-MuiButton-root{
-  color: #000;
-  font-weight: 600;
-  font-size: 14px;
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+	font-weight: 600;
+	font-size: 13px;
+	text-transform: capitalize;
 }
 
-.signTextWrap{
-  width: 100%;
-  font-size:12px;
-  font-weight: 700;
-  text-align: center;
+.signTextWrap {
+	width: 100%;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
 
 }
-.signBarWrap{
-  width: 50%;
-    height: 2px;
-    background-color: #CFCFCF;
 
-    
+.signBarWrap {
+	width: 50%;
+	height: 2px;
+	background-color: #CFCFCF;
+
 }
 
-.signTextWrapMain{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
+.signTextWrapMain {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
+
+@media (max-width: 576px) {
+	.CounrtyBox {
+		gap: 2px;
+	}
+
+	.DetailsBox {
+		width: auto;
+	}
+
+	.DetailsBox h2 {
+		font-size: 18px;
+		line-height: 21px;
+	}
 }

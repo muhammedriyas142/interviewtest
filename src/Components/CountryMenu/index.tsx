@@ -20,6 +20,8 @@ interface Country {
     const [active, setActive] = useState<string>('All');
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
+    const options = ["All", "Europe", "Asia"];
+
     const open = Boolean(anchorEl);
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
       setAnchorEl(event.currentTarget);
@@ -103,48 +105,41 @@ return (
       transformOrigin={{ horizontal: 'right', vertical: 'top' }}
       anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
     >
-      <MenuItem
-        onClick={() => countryChange('All')}
-        style={{
-          borderBottom: active === 'All' ? '2px solid #000' : 'none',
-          borderRadius: 0,
-        }}
-      >
-        All
-      </MenuItem>
-      <MenuItem
-        onClick={() => countryChange('Asia')}
-        style={{
-          borderBottom: active === 'Asia' ? '2px solid #000' : 'none',
-          borderRadius: 0,
-        }}
-      >
-        Asia
-      </MenuItem>
-      <MenuItem
-        onClick={() => countryChange('Europe')}
-        style={{
-          borderBottom: active === 'Europe' ? '2px solid #000' : 'none',
-          borderRadius: 0,
-        }}
-      >
-        Europe
-      </MenuItem>
+       {options.map((option) => (
+          <MenuItem  key={option}
+            style={{
+              borderBottom:  'none',
+              borderRadius: 0,
+              color: active === option ? '#000' : '#8B8B8B',
+            }}
+            onClick={() => countryChange(option)}
+          >
+            {option}
+          </MenuItem>
+      ))}
+    
     </Menu>
 
     {/*Mobile  Menu END*/}
 
 {/*Desk Top  Menu*/}
-    <ul className='menu Desktop-Menu d-none  d-sm-none d-md-block'>
-     <li>
-    <Button  style={{ borderBottom: active === 'All' ? '2px solid #000' : 'none', borderRadius: 0, }} onClick={() => countryChange('All')} >  All </Button>
-     </li>
-     <li>
-    <Button  style={{ borderBottom: active === 'Asia' ? '2px solid #000' : 'none',  borderRadius: 0}} onClick={()=>countryChange('Asia')} >Asia</Button>
-    </li>
-    <li>
-    <Button  style={{ borderBottom: active === 'Europe' ? '2px solid #000' : 'none', borderRadius: 0, }} onClick={()=>countryChange('Europe')}>Europe</Button>
-    </li>
+    <ul className='menu Desktop-Menu d-none  d-sm-none d-md-block'>    
+    {options.map((option) => (
+        <li key={option}>
+          <Button className='justify-content-start'
+            style={{
+              borderBottom: active === option ? '2px solid #000' : 'none',
+              borderRadius: 0,
+              color: active === option ? '#000' : '#8B8B8B',
+            }}
+            onClick={() => countryChange(option)}
+          >
+            {option}
+          </Button>
+        </li>
+      ))}
+
+
     </ul>
 
 {/*Desk Top  Menu END*/}

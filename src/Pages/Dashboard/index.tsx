@@ -1,8 +1,9 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Box from '@mui/material/Box';
 import Skeleton from '@mui/material/Skeleton';
 import MenuList from '../../Components/CountryMenu';
+import Footer from '../../Components/Common/Footer';
 interface Country {
   name: string;
   region:string;
@@ -12,9 +13,6 @@ interface Country {
 const Home = () => {
 
   const [data, setData] = useState<Country[] | null>(null);
-
-  const [error, setError] = useState<Error | null>(null);
-
   const [loading, setLoading] = useState<boolean>(true);
 
 
@@ -64,7 +62,7 @@ const Home = () => {
     <>
     <div className='container'>
         <div className='row gy-4'>
-            <div className='col-6 col-sm-6 mt-5 mb-4'><h1>Countries</h1>
+            <div className='col-6 col-sm-6 mt-5 mb-4'><h1 className='h1Head'>Countries</h1>
             
             </div>
             <div className='col-6 col-sm-6 col-md-6  mt-5 mb-4 '>
@@ -73,7 +71,6 @@ const Home = () => {
 
                 </div>
             </div>
-           {error && <p>Error: {error.message}</p>} 
             {loading? countryBoxes  :data && (
            <>
           {data.map((country: Country) => (
@@ -85,6 +82,10 @@ const Home = () => {
       )}
       </div>
       </div>
+      {/* Footer start*/}
+      <Footer />
+     {/* Footer END*/}
+
     </>
   );
 }
